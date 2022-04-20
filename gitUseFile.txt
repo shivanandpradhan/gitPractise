@@ -1,0 +1,104 @@
+Use of git and git hub
+
+
+git --version :- for getting the version of the installed git.
+
+#add user name and email in git
+
+git config --global user.name "name of user"
+
+git config --global user.email "email address"
+
+#editing the globals using text editor
+git config --global --edit
+: for saving : press esc and type :wq and press enter.
+
+
+
+#initialising the git 
+git init 
+
+
+#checking the status of the  file  in git
+git status
+
+
+#adding file in staging area
+git add <file_name>
+
+git add .    :- this will add all the files (current directory) in staging area.
+
+
+#checking all the details about the commit
+git log  :- display all the commit with special hash code related to each commit.
+
+#moving back to earlier commit
+copy the hashcode for commit where you want to go back
+
+git checkout <hashCode>
+
+
+#moving to the master
+git checkout master
+
+
+#checking and know different branches
+git  branch
+
+#adding branch
+git branch <branch_name>
+
+#moving to different branches
+git checkout <branch_name>
+
+#creating and moving to that branch
+git checkout -b <branch_name>
+
+#merging two branches
+firstly move to the branch with which you want to merge 
+and then
+
+git merge <branch_name>
+
+
+#introduction to .gitignore file
+In this file, we are adding those files_name 
+which we don't want to be track by git.
+
+
+#pushing repo on the github
+
+git remote add origin <url_for_repo>
+
+git remote -v :- it will display url for fetch and pushing
+
+git branch -M master
+
+git push -u origin <branch_name_to_push>
+
+
+#once origin is defined, we can push by only writting 
+git push
+
+
+
+#making a clone of repo inside local machine
+git clone <url_for_repo>
+
+
+
+
+#allowing other to have access to your repo i.e adding collaborations.
+open your repo and go to setting inside that go to manage access and
+invites collaboration 
+and finally add git hub account to which you want to provide access.
+
+
+
+#open source contribution on git hub
+1. search for repo... you want to contribute....
+2. click to fork to make a copy of repo inside your github account.
+3. now you can make any changes inside that... clone repo in your local machine.
+4. make necessary changes and push it on the github.
+5. make a pull request and it will send that pull request to owner of repo.
+6. if owner finds its useful, he can add the changes in his repo by merging it.
